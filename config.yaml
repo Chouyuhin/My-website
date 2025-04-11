@@ -24,25 +24,16 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
+    name: "Zhou Yuxin"
     tagline: Title
     location: "City Name, ST"
-    photo: profile.jpg
+    photo: IMG_2208.jpg
   social:
     title: Links
     list:
-      - icon: fab fa-linkedin-in
-        url: "#"
-        title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
       - icon: fab fa-github
         url: "#"
         title: GitHub
-      - icon: fab fa-twitter
-        url: "#"
-        title: Twitter
       - icon: fab fa-orcid
         url: "#"
         title: Orcid
