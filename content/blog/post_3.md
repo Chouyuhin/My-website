@@ -1,6 +1,6 @@
 ---
 title: "My first blog"
-date: 2025.4.11
+date: 2025-04-11
 tags: ["mollis urna", "notes", "laoreet"]
 categories: ["diam aliqua", "fringilla"]
 description: "dictum tellus sapien vitae integer justo amet mauris cras bolestie sollicitudin dignissim"
