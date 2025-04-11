@@ -10,7 +10,7 @@ params:
     powered by [hugo](https://gohugo.io/) & deployed on
     [Cloudflare](https://www.cloudflare.com/)
   theme:
-    mainTheme: dark
+    mainTheme: light
     showAttribute: true
     singlePage: false
   favicons:
@@ -27,7 +27,7 @@ params:
     name: "Zhou Yuxin"
     tagline: Title
     location: "City Name, ST"
-    photo: IMG_2208.jpg
+    photo: profile.jpg
   social:
     title: Links
     list:
@@ -55,7 +55,7 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: I'm a Ph.D student from UCAS.
   experience:
     title: Experiences
     icon: fas fa-briefcase
