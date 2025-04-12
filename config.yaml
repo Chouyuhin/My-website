@@ -50,13 +50,9 @@ params:
     - item: aboutme
       expand: true
     - item: experience
-      expand: true
     - item: education
-      expand: true
     - item: publication
-      expand: true
     - item: project
-      expand: true
     - item: skill
     - item: hobby
   aboutme:
@@ -67,9 +63,10 @@ params:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
+      - position: Research Intern
+        dates: 2022 - 2024.3
+        uel: "https://damo.alibaba.com/?language=zh"
+        company: Alibaba DAMO Academy
         details: |1-
           - Printed from desktop. Sent [emails](#).
               - Called people *using* telephone.
@@ -83,14 +80,14 @@ params:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
+      - degree: Ph.D. in Geodynamics
+        college: University of Chinese Academy of Sciences
+        dates: 2023 - *present*
         thesis_title: "Effect of humans on other humans: a study of human behavior."
         thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
+      - degree: M.S. in Geodynamics
+        college: University of Chinese Academy of Sciences
+        dates: 2021.09 - 2023.06
         thesis_title: "Effect of humans on other humans: a study of human behavior."
         thesis_url: "#"
       - degree: B.S. in Subject
@@ -111,10 +108,10 @@ params:
       - title: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
+        authors: "Zhou, Y., Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
+        date: "2025"
+        journal: "Computers & Geosciences 196, 105867"
+        url: "https://doi.org/10.1016/j.cageo.2025.105867"
         type: Journal Articles
       - title: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
