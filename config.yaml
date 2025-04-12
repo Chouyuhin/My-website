@@ -43,7 +43,7 @@ params:
       - icon: fab fa-researchgate
         url: "#"
         title: ResearchGate
-      - icon: fab fa-bilibili
+      - icon: fab fa-bimobject
         url: "https://space.bilibili.com/11503694"
         title: Bilibili 
   showInAccordion:
