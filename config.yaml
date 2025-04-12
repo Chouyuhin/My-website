@@ -43,9 +43,10 @@ params:
       - icon: fab fa-researchgate
         url: "#"
         title: ResearchGate
-      - icon: static/icons/bilibili.svg
+      - icon: /icons/bilibili.svg
         url: "https://space.bilibili.com/11503694"
         title: Bilibili
+        style: "width: 24px; height: 24px; display: inline-block;"  
   showInAccordion:
     - item: aboutme
       expand: true
