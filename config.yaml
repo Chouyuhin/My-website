@@ -10,7 +10,7 @@ params:
     powered by [hugo](https://gohugo.io/) & deployed on
     [Cloudflare](https://www.cloudflare.com/)
   theme:
-    mainTheme: light
+    mainTheme: dark
     showAttribute: true
     singlePage: false
   favicons:
@@ -25,17 +25,17 @@ params:
 
   profile:
     name: "Zhou Yuxin"
-    tagline: Title
-    location: "City Name, ST"
+    tagline: Ph.D
+    location: "zhouyuxin21@mails.ucas.ac.cn"
     photo: profile.jpg
   social:
     title: Links
     list:
       - icon: fab fa-github
-        url: "#"
+        url: "https://github.com/Chouyuhin"
         title: GitHub
       - icon: fab fa-orcid
-        url: "#"
+        url: "https://orcid.org/0009-0000-2877-9173"
         title: Orcid
       - icon: ai ai-google-scholar
         url: "#"
@@ -43,6 +43,9 @@ params:
       - icon: fab fa-researchgate
         url: "#"
         title: ResearchGate
+      - icon: fab fa-bilibili
+        url: "https://space.bilibili.com/11503694"
+        title: Bilibili
   showInAccordion:
     - item: aboutme
       expand: true
