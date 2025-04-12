@@ -6,7 +6,7 @@
   <div class="mx-2">
     <a class="text-2xl" href="{{ .url }}" title="{{ .title }}">
       {{ if hasPrefix .icon "/" }}  <!-- 如果是路径（如 /icons/bilibili.svg） -->
-        <img src="{{ .icon }}" alt="{{ .title }}" class="h-6 w-6 inline-block">
+        <img src="{{ .icon }}" alt="{{ .title }}" class="h-6 w-6 object-contain">
       {{ else }}  <!-- 否则按 Font Awesome 渲染 -->
         <i class="mt-1 {{ .icon }}"></i>
       {{ end }}

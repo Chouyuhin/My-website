@@ -43,7 +43,7 @@ params:
       - icon: fab fa-researchgate
         url: "#"
         title: ResearchGate
-      - icon: fa-brands fa-bilibili
+      - icon: /icons/bilibili.svg
         url: "https://space.bilibili.com/11503694"
         title: Bilibili
         style: "width: 24px; height: 24px; display: inline-block;"  
