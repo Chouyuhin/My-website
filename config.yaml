@@ -65,7 +65,7 @@ params:
     list:
       - position: Research Intern
         dates: 2022 - 2024.3
-        uel: "https://damo.alibaba.com/?language=zh"
+        url: "https://damo.alibaba.com/?language=zh"
         company: Alibaba DAMO Academy
         details: |1-
           - Printed from desktop. Sent [emails](#).
@@ -98,8 +98,8 @@ params:
     icon: fas fa-book
     format:
       - date
-      - title
       - authors
+      - title
       - journal
     types:
       - Journal Articles
@@ -149,9 +149,9 @@ params:
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Python, Adobe Illustrater"
+      - skill: "Python"
         skillrating: 90
-      - skill: Skill 3
+      - skill: Adobe Illustrater
         skillrating: 80
       - skill: Matlab
         skillrating: 50
