@@ -82,7 +82,7 @@ params:
     list:
       - degree: Ph.D. in Geodynamics
         college: University of Chinese Academy of Sciences
-        dates: 2023 - *present*
+        dates: 2023 - *Present*
         thesis_title: "Effect of humans on other humans: a study of human behavior."
         thesis_url: "#"
       - degree: M.S. in Geodynamics
@@ -106,8 +106,7 @@ params:
       - Proceedings
     list:
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          TranSeis: A high precision multitask seismic waveform detector.
         authors: "Zhou, Y., Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
         date: "2025"
         journal: "Computers & Geosciences 196, 105867"
@@ -150,16 +149,17 @@ params:
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Skill 1, Skill 2"
+      - skill: "Python, Adobe Illustrater"
         skillrating: 90
       - skill: Skill 3
         skillrating: 80
-      - skill: Skill 4
+      - skill: Matlab
         skillrating: 50
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
     list:
+      - hobby: Guitar,Band Click the fifth social link which is out band recording if interested
       - hobby: Cooking
       - hobby: Hiking
-      - hobby: Baking
+      - hobby: Ping Pong
