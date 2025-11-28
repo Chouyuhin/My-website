@@ -1,0 +1,174 @@
+baseURL: https://aafu.pages.dev/
+languageCode: en-us
+enableEmoji: true
+build:
+  writeStats: true
+params:
+  title: choy's site
+  author: chouyuhin
+  description: Website title
+  copyright: >-
+    yzhou2@fas.harvard.edu & zhouyuxin21@mails.ucas.ac.cn
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: "Yuxin Zhou"
+    tagline: Ph.D
+    location: "Cambirdge, MA"
+    photo: profile.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-github
+        url: "https://github.com/Chouyuhin"
+        title: GitHub
+      - icon: fab fa-orcid
+        url: "https://orcid.org/0009-0000-2877-9173"
+        title: Orcid
+      - icon: fab fa-linkedin-in
+        url: "https://www.linkedin.com/in/yuxin-zhou96"
+        title: linkedin
+      - icon: ai ai-google-scholar
+        url: "https://scholar.google.com/citations?user=Na73xMYAAAAJ&hl=en"
+        title: Google Scholar
+      - icon: fab fa-researchgate
+        url: "https://www.researchgate.net/profile/Yuxin-Zhou-57?ev=hdr_xprf"
+        title: ResearchGate
+      - icon: fas fa-video
+        url: "https://space.bilibili.com/11503694"
+        title: Bilibili 
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+    - item: publication
+    - item: project
+    - item: skill
+    - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: |
+     :wave:! I'm currently a research fellow at Harvard University, Department of Earth and Planetary Sciences (EPS).
+
+      I obtained my Ph.D. from the University of Chinese Academy of Sciences (UCAS). 
+
+      My work focuses on combining seismology and machine learning to better understand the causal mechanisms behind earthquakes. I'm also interested in statistics, NLP, knowledge graphs, and meta-learning.
+
+      Outside of research, I enjoy exploring new ideas across disciplines and sharing insights on how AI can deepen our understanding of the natural world.
+
+      See **Publications** and **Projects** below for my research works . See [Blog](./blog/) for more insteresting disccusions :innocent:. Or full [CV](files/CV_Zhou_all.pdf).
+  experience:
+    title: Experiences
+    icon: fas fa-briefcase
+    list:
+      - position: Visting Ph.D. Student/Research Fellow
+        dates: Sep. 2025 - Present
+        url: "https://eps.harvard.edu/"
+        company: Harvard University, Department of Earth and Planetary Sciences
+        details: |1-
+          - Work with Dr. S.Mostafa Mousavi to apply advanced AI methodologies to analyze seismic data.
+          - Focus on developing models for earthquake detection and characterization.
+          - Projects include knowledge graph construction for seismic events.
+      - position: Research Intern
+        dates: Sep. 2023 - Mar. 2024
+        url: "https://damo.alibaba.com/?language=zh"
+        company: Alibaba DAMO Academy
+        details: |1-
+          - Collaborated with Dr.Zheng Yuan and Dr.Chuanqi Tan of Dr.Fei Huang's group in LLM lab on cutting-edge AI research.
+          - AI4Seismology.
+          - Developed a deep learning model based on Transformer to enhance the accuracy of earthquake signal detection.
+      
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: Ph.D. in Geodynamics
+        college: University of Chinese Academy of Sciences(UCAS)
+        dates: Sep. 2021 - Present
+        thesis_title: "The application of deep learning in seismology."
+        thesis_url: "#"
+      - degree: B.S. in Applied Statictics
+        college: Changsha University of Science and Technology
+        dates: Sep. 2017 - Jun. 2021
+  publication: 
+    title: Publications
+    icon: fas fa-book
+    format:
+      - date
+      - authors
+      - title
+      - journal
+    types:
+      - Journal Articles
+      - Proceedings
+    list: 
+      - title: >-
+          TranSeis: A high precision multitask seismic waveform detector.
+        authors: "**Zhou, Y.**, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
+        date: "2025"
+        journal: "**Computers & Geosciences** 196, 105867"
+        url: "https://doi.org/10.1016/j.cageo.2025.105867"
+        type: Journal Articles
+      - title: >-
+          Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration.
+        authors: "Zhang, Y., Chu, B., Huang, T., Qi, S., Manga, M., Zhang, H., Zheng, B., **Zhou, Y.**"
+        date: "2024"
+        journal: "**Water** 16, 868 "
+        url: "https://doi.org/10.3390/w16060868."
+        type: Journal Articles
+      - title: >-
+          Substantial Evidence Suggests Strong Seismic Potential of the Qiaojia-Dongchuan Seismic Gap
+        authors: "**Zhou, Y.**, Zhang, H.,S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
+        date: "2026"
+        journal: "_In Prep_."
+        url: "#"
+        type: Proceedings
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+      - title: Project 1
+        url: "#"
+        description: Description of the project
+      - title: Project 2
+        url: "#"
+        description: Description of the project
+      - title: Project 3
+        url: "#"
+        description: Description of the project
+      - title: Project 4
+        url: "#"
+        description: Description of the project
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    list:
+      - skill: "Python"
+        skillrating: 90
+      - skill: Adobe Illustrater
+        skillrating: 80
+      - skill: Matlab
+        skillrating: 50
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+      - hobby: Guitar & Band (Click the final social link on the left for our band recordings if interested)
+      - hobby: Reading (sometimes i share book reviews on my blog)
+      - hobby: Hiking 
+      - hobby: Ping Pong
