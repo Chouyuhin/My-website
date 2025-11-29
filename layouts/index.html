@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
-  <div class="col-span-2">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-4 max-w-6xl mx-auto">
+  <div class="col-span-1 md:w-[280px]">
     <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
       <div class="flex flex-col justify-center">
         <div class="">{{ partial "profilePhoto" . }}</div>
@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  <div class="col-span-3 relative">
+  <div class="col-span-3 relative pl-8">
     {{ range .Site.Params.showInAccordion }}
     <div class="px-2">
       <h2

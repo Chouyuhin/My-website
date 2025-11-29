@@ -1,8 +1,14 @@
-<div class="w-100 h-100 flex justify-center p-4">
+<div class="bg-[#141414] rounded-xl shadow-lg p-6 text-center 
+            dark:bg-[#141414] dark:text-gray-300
+            bg-gray-100 text-gray-900">
   <img
-    class="rounded rounded-full"
+    class="mx-auto mb-4 object-cover rounded-full"
     src="{{ `images` | relURL }}/{{ .Site.Params.profile.photo }}"
     alt="{{ .Site.Params.author }}"
-    style="max-width: 250px"
+    style="width: 100%; max-width: 380px; height: auto;"  
   />
+  <!-- 👇 学术信息 -->
+  <h1 class="text-2xl font-semibold tracking-wide dark:text-gray-300 text-gray-900">{{ .Site.Params.profile.name }}</h1>
+  <p class="text-lg dark:text-gray-400 text-gray-600">{{ .Site.Params.profile.tagline }}</p>
+  <p class="text-sm italic dark:text-gray-500 text-gray-600">{{ .Site.Params.profile.location }}</p>
 </div>
