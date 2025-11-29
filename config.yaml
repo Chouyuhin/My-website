@@ -25,9 +25,9 @@ params:
 
   profile:
     name: "Yuxin Zhou"
-    tagline: Ph.D
+    tagline: Ph.D Candidate @ UCAS | Research Fellow @ HU
     location: "Cambirdge, MA"
-    photo: profile.jpg
+    photo: about_photo.png
   social:
     title: Links
     list:
@@ -62,9 +62,9 @@ params:
     title: About Me
     icon: fas fa-user
     description: |
-     :wave:! I'm currently a research fellow at Harvard University, Department of Earth and Planetary Sciences (EPS).
+     :wave:! I'm currently a research fellow at Harvard University, working with Dr. *S.Mostafa Mousavi*.
 
-      I obtained my Ph.D. from the University of Chinese Academy of Sciences (UCAS). 
+      I obtained my Ph.D. from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. *Huai Zhang*. 
 
       My work focuses on combining seismology and machine learning to better understand the causal mechanisms behind earthquakes. I'm also interested in statistics, NLP, knowledge graphs, and meta-learning.
 
