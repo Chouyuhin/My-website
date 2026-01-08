@@ -1,25 +1,23 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-4
             w-full md:max-w-6xl md:mx-auto px-4">
-            
-  <div class="
-      w-full h-auto 
-      flex flex-col items-center           md:items-start md:justify-start      md:h-auto md:flex-none md:col-span-1 md:w-[280px] md:sticky md:top-4                   ">
-    
-    <div class="
-        w-[90%] max-w-sm     md:w-full  ">
+  <div class="flex flex-col items-center w-full md:items-start md:w-[280px] md:sticky md:top-4">
+  
+    <div class="w-[90%] max-w-sm md:w-full bg-gray-300 dark:bg-darker rounded-xl shadow-lg overflow-hidden">
       
-      <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-0 w-full">
-        <div class="flex flex-col items-center justify-center">
-          <div class="w-full">{{ partial "profilePhoto" . }}</div>
-          <div class="p-2 text-center w-full">
-            {{ partial "social" . }} {{ partial "footer" . }}
-          </div>
+      <div class="flex flex-col items-center justify-center p-6 text-center">
+        <div class="w-auto">
+          {{ partial "profilePhoto" . }}
+        </div>
+        
+        <div class="mt-4 w-full">
+          {{ partial "social" . }} 
+          {{ partial "footer" . }}
         </div>
       </div>
-
+      
     </div>
-  </div>  
+  </div>
   <div class="col-span-3 relative pl-0 md:pl-8">
     {{ range .Site.Params.showInAccordion }}
     <div class="px-2">
