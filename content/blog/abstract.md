@@ -1,5 +1,5 @@
 ---
-title: "Choy's site"
+title: "Shane's site"
 date: 2025-11-27
 tags: ["Intro", "abstract"]
 categories: ["abstract", "non-research"]
@@ -7,7 +7,7 @@ description: "ReadMe for my blog"
 draft: false
 ---
 
-This's a personal website of Yuxin Zhou, who is interested in beautiful things. 
+This's a personal website of Yuxin(Shane) Zhou, who is interested in beautiful things. 
 
 [Her website](https://chouyuhin.github.io/My-website/) involves her research works, experiences and thoughts.
 
