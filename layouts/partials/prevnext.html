@@ -1,9 +1,9 @@
 <div class="flex flex-row justify-around my-2">
   <h3 class="mb-1 mt-1 text-left mr-4">
-    {{ if .PrevInSection }}
+    {{ if .NextInSection }}
     <a
-      href="{{ .PrevInSection.Permalink | relURL }}"
-      title="{{ .PrevInSection.Title }}"
+      href="{{ .NextInSection.Permalink | relURL }}"
+      title="{{ .NextInSection.Title }}"
     >
       <i class="nav-menu fas fa-chevron-circle-left"></i>
     </a>
@@ -11,11 +11,12 @@
     <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-left"></i>
     {{ end }}
   </h3>
+  
   <h3 class="mb-1 mt-1 text-left ml-4">
-    {{ if .NextInSection }}
+    {{ if .PrevInSection }}
     <a
-      href="{{ .NextInSection.Permalink | relURL }}"
-      title="{{ .NextInSection.Title }}"
+      href="{{ .PrevInSection.Permalink | relURL }}"
+      title="{{ .PrevInSection.Title }}"
     >
       <i class="nav-menu fas fa-chevron-circle-right"></i>
     </a>
