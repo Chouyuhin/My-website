@@ -4,8 +4,8 @@ enableEmoji: true
 build:
   writeStats: true
 params:
-  title: choy's site
-  author: chouyuhin
+  title: Shane's site
+  author: Shane Zhou
   description: Website title
   copyright: >-
     yzhou2@fas.harvard.edu & zhouyuxin21@mails.ucas.ac.cn
