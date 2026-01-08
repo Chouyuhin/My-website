@@ -9,4 +9,4 @@ draft: false
 
 
 
-{{< figure src="static/images/kgv1.png" alt="v1.0" caption="Figure 1 v1.0 knowledge graph for seismic catalogs" >}}
+{{< figure src="/images/kgv1.png" alt="v1.0" caption="Figure 1 v1.0 knowledge graph for seismic catalogs" >}}
