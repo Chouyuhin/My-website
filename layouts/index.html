@@ -13,7 +13,7 @@
       </div>
     </div>
   </div>
-  <div class="col-span-3 relative pl-8">
+  <div class="col-span-3 relative pl-0 md:pl-8">
     {{ range .Site.Params.showInAccordion }}
     <div class="px-2">
       <h2
@@ -30,7 +30,7 @@
       </h2>
 
       <div
-        class="panel overflow-hidden px-2 ml-2"
+        <div class="panel overflow-hidden px-2 ml-0 md:ml-2">
         {{if $current.panelid}}
         id="{{ $current.panelid }}"
         {{ end }}
