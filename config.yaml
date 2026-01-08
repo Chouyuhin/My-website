@@ -62,15 +62,15 @@ params:
     title: About Me
     icon: fas fa-user
     description: |
-     :wave:! I'm currently a research fellow at Harvard University (HU), working with Dr. *S.Mostafa Mousavi*.
+     :wave:! I'm currently a research fellow at *Harvard University (HU)*, working with Dr. [S.Mostafa Mousavi](https://eps.harvard.edu/people/mostafa-mousavi/).
 
-      I obtained my Ph.D. from the University of Chinese Academy of Sciences (UCAS), supervised by Prof. *Huai Zhang*. 
+      I obtained my Ph.D. from the *University of Chinese Academy of Sciences (UCAS)*, advised by Prof. [Huai Zhang](https://people.ucas.ac.cn/~hzhang).
 
       My work focuses on combining seismology and machine learning to better understand the causal mechanisms behind earthquakes. I'm also interested in statistics, NLP, knowledge graphs, and meta-learning.
 
       Outside of research, I enjoy exploring new ideas across disciplines and sharing insights on how AI can deepen our understanding of the natural world.
 
-      See **Publications** and **Projects** below for my research works . See [Blog](./blog/) for more insteresting disccusions :innocent:. Or full [CV](files/CV_Zhou_all.pdf).
+      See **Publications** and **Projects** below for my research works. See [Blog](./blog/) for more insteresting disccusions :innocent:. Or full [CV](files/CV_Zhou_all.pdf).
   experience:
     title: Experiences
     icon: fas fa-briefcase
