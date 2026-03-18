@@ -5,20 +5,20 @@
 
 @layer components {
   .nav {
-    @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
+    @apply text-lg text-gray-500 dark:text-gray-300 font-semibold;
   }
   .nav > a {
-    @apply hover:text-blue-700;
+    @apply hover:text-gray-700;
   }
   .panel {
     max-height: 0;
     transition: 0.3s ease-out;
   }
   h2.accordion {
-    @apply text-blue-600 dark:text-yellow-500;
+    @apply text-gray-600 dark:text-yellow-500;
   }
   a {
-    @apply text-blue-500 hover:text-blue-700 hover:underline dark:text-yellow-300 dark:hover:text-yellow-500;
+    @apply text-gray-500 hover:text-gray-700 hover:underline dark:text-yellow-300 dark:hover:text-yellow-500;
   }
   .active {
     @apply overflow-visible;
@@ -78,10 +78,10 @@
       @apply border border-gray-500 dark:border-yellow-300 flex justify-center items-center;
     }
     .page-link {
-      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500  dark:hover:bg-yellow-300;
+      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-gray-400  dark:hover:bg-yellow-300;
     }
     .active {
-      @apply bg-blue-500 pointer-events-none  dark:bg-yellow-300;
+      @apply bg-gray-400 pointer-events-none  dark:bg-yellow-300;
       .page-link {
         @apply text-gray-200 dark:text-gray-800;
       }
@@ -150,7 +150,7 @@
 
 .event-item {
   position: relative;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #d0d0d0;
   transition: all 0.2s ease;
 }
 .dark .event-item {
@@ -197,7 +197,7 @@ header.nav a {
 }
 header.nav a:hover {
   transform: translateY(-1px);
-  background-color: rgba(59, 130, 246, 0.1);
+  background-color: rgba(208, 208, 208, 0.1);
 }
 .dark header.nav a:hover {
   background-color: rgba(253, 224, 71, 0.1);
@@ -288,9 +288,9 @@ a:not(.no-underline):hover:after {
 
 /* Prominent links for aboutme section */
 .prominent-link {
-  color: #3b82f6;
+  color: #d0d0d0;
   font-weight: 600;
-  border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+  border-bottom: 2px solid rgba(208, 208, 208, 0.3);
   transition: all 0.2s ease;
 }
 .dark .prominent-link {

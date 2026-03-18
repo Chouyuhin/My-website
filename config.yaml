@@ -10,7 +10,7 @@ params:
   copyright: >-
     yzhou2@fas.harvard.edu & zhouyuxin21@mails.ucas.ac.cn
   theme:
-    mainTheme: dark
+    mainTheme: ""
     showAttribute: true
     singlePage: false
   favicons:
