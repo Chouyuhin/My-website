@@ -70,7 +70,7 @@ params:
 
       Outside of research, I enjoy exploring new ideas across disciplines and sharing insights on how AI can deepen our understanding of the natural world.
 
-      See **Publications** and **Projects** below for my research works. See [Blog](./blog/) for more insteresting disccusions :innocent:. Or full [CV](files/CV_Zhou_all.pdf).
+      See [Publications](./publications/) for my research works and [Events](./events/) for news and milestones. Visit [Blog](./blog/) for more interesting discussions :innocent:. View full [CV](files/CV_Zhou_all.pdf).
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -172,3 +172,16 @@ params:
       - hobby: Reading (sometimes i share book reviews on my blog)
       - hobby: Hiking 
       - hobby: Ping Pong
+
+  events:
+    title: Events & News
+    icon: fas fa-calendar-alt
+    list:
+      - date: "2025-03-15"
+        title: "Presented at AGU Fall Meeting"
+        description: "Presented our work on TranSeis at the American Geophysical Union Fall Meeting."
+        link: "https://example.com"
+      - date: "2024-10-20"
+        title: "Awarded Best Paper"
+        description: "Received best paper award at Computers & Geosciences conference."
+        link: "#"
