@@ -25,10 +25,10 @@ module.exports = {
             "code::before": false,
             "code::after": false,
             a: {
-              color: theme(`colors.blue.600`),
+              color: theme(`colors.gray.600`),
               textDecoration: "none",
               "&:hover": {
-                color: theme(`colors.blue.800`),
+                color: theme(`colors.gray.800`),
                 textDecoration: "underline",
               },
             },
