@@ -115,6 +115,9 @@ params:
     types:
       - Journal Articles
       - Proceedings
+    # Each publication can have optional description and image fields
+    # description: "Markdown description of the paper"
+    # image: "images/your-image.jpg" (place images in static/images/)
     list: 
       - title: >-
           TranSeis: A high precision multitask seismic waveform detector.
@@ -123,6 +126,8 @@ params:
         journal: "_Computers & Geosciences_ 196, 105867"
         url: "https://doi.org/10.1016/j.cageo.2025.105867"
         type: Journal Articles
+        description: "The multitask parallel model based on the Transformer architecture for seismic signal detection and phase picking."
+        image: "images/transeis_mainfig.jpg"
       - title: >-
           Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration.
         authors: "Zhang, Y., Chu, B., Huang, T., Qi, S., Manga, M., Zhang, H., Zheng, B., **Zhou, Y.**"
