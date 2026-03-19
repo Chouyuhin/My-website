@@ -104,7 +104,7 @@ params:
       - degree: B.S. in Applied Statictics
         college: Changsha University of Science and Technology
         dates: Sep. 2017 - Jun. 2021
-  publication: 
+  publication:
     title: Publications
     icon: fas fa-book
     format:
@@ -118,6 +118,8 @@ params:
     # Each publication can have optional description and image fields
     # description: "Markdown description of the paper"
     # image: "images/your-image.jpg" (place images in static/images/)
+    # image2: "images/second-image.jpg" (optional second image for publications page)
+    # Note: Ensure your name "Zhou, Y." is bolded with ** ** in authors field
     list: 
       - title: >-
           TranSeis: A high precision multitask seismic waveform detector.
@@ -128,6 +130,7 @@ params:
         type: Journal Articles
         description: "The multitask parallel model based on the Transformer architecture for seismic signal detection and phase picking."
         image: "images/transeis_mainfig.jpg"
+        image2: "images/example-preview.jpg"
       - title: >-
           Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration.
         authors: "Zhang, Y., Chu, B., Huang, T., Qi, S., Manga, M., Zhang, H., Zheng, B., **Zhou, Y.**"
@@ -137,14 +140,14 @@ params:
         type: Journal Articles
       - title: >-
           Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
-        authors: "**Zhou, Y.**, Zhang, H.,S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
+        authors: "**Zhou, Y.**, Zhang, H., S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
         date: "2026"
         journal: "_Under Review-Communications Earth & Environment (Nature Index)_."
         url: "#"
         type: Proceedings
       - title: >-
           Title	Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
-        authors: "**Zhou, Y.**, Zhang, H.,S.Mousavi, M."
+        authors: "**Zhou, Y.**, Zhang, H., S.Mousavi, M."
         date: "2026"
         journal: "_Under Review-Journal of Geophysical Research: Solid Earth_."
         url: "#"
