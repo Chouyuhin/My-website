@@ -27,7 +27,7 @@ params:
     name: "Yuxin Zhou"
     tagline: Research Fellow @ Harvard University | Ph.D Candidate @ UCAS
     location: "Cambirdge, MA"
-    photo: about_photo.png
+    photo: myprofile.jpg
   social:
     title: Links
     list:
@@ -131,10 +131,17 @@ params:
         url: "https://doi.org/10.3390/w16060868."
         type: Journal Articles
       - title: >-
-          Substantial Evidence Suggests Strong Seismic Potential of the Qiaojia-Dongchuan Seismic Gap
+          Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
         authors: "**Zhou, Y.**, Zhang, H.,S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
         date: "2026"
-        journal: "_In Prep_."
+        journal: "_Under Review-Communications Earth & Environment_."
+        url: "#"
+        type: Proceedings
+      - title: >-
+          Title	Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
+        authors: "**Zhou, Y.**, Zhang, H.,S.Mousavi, M."
+        date: "2026"
+        journal: "_Under Review-Journal of Geophysical Research: Solid Earth_."
         url: "#"
         type: Proceedings
   project:
