@@ -120,21 +120,21 @@ params:
           TranSeis: A high precision multitask seismic waveform detector.
         authors: "**Zhou, Y.**, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
         date: "2025"
-        journal: "**Computers & Geosciences** 196, 105867"
+        journal: "_Computers & Geosciences_ 196, 105867"
         url: "https://doi.org/10.1016/j.cageo.2025.105867"
         type: Journal Articles
       - title: >-
           Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration.
         authors: "Zhang, Y., Chu, B., Huang, T., Qi, S., Manga, M., Zhang, H., Zheng, B., **Zhou, Y.**"
         date: "2024"
-        journal: "**Water** 16, 868 "
+        journal: "_Water_ 16, 868 "
         url: "https://doi.org/10.3390/w16060868."
         type: Journal Articles
       - title: >-
           Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
         authors: "**Zhou, Y.**, Zhang, H.,S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
         date: "2026"
-        journal: "_Under Review-Communications Earth & Environment_."
+        journal: "_Under Review-Communications Earth & Environment (Nature Index)_."
         url: "#"
         type: Proceedings
       - title: >-
