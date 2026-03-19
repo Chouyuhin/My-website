@@ -1,15 +1,16 @@
+{{ $sortedPublications := sort $.Site.Params.publication.list ".date" "desc" }}
 {{ if .Site.Params.publication.types }}
 {{ range .Site.Params.publication.types }}
 {{ $type := . }}
 <h4 class="text-xl font-semibold mt-6 mb-4">{{ $type }}</h4>
-{{ range $.Site.Params.publication.list }}
+{{ range $sortedPublications }}
 {{ if eq $type .type }}
 {{ partial "accordion/supportingPartials/publication-item" (dict "pub" .) }}
 {{ end }}
 {{ end }}
 {{ end }}
 {{ else }}
-{{ range $.Site.Params.publication.list }}
+{{ range $sortedPublications }}
 {{ partial "accordion/supportingPartials/publication-item" (dict "pub" .) }}
 {{ end }}
 {{ end }}

@@ -311,3 +311,8 @@ a:not(.no-underline):hover:after {
 main > div {
   animation: fadeIn 0.5s ease-out;
 }
+
+/* Ensure strong tags are bold */
+strong, .publication-item strong, .publication-item p strong {
+  font-weight: bold !important;
+}
