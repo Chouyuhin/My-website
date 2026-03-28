@@ -63,7 +63,7 @@ params:
     title: About Me
     icon: fas fa-user
     description: |
-      :wave:! I'm a research fellow at Harvard University, combining seismology and machine learning to understand earthquake mechanisms. I'm also interested in statistics, NLP, knowledge graphs, and meta-learning. See [Publications](./publications/) for my research works and view full [CV](files/CV_Zhou_all.pdf).
+      :wave:! I'm a research fellow at Harvard University, working with [S.Mostafa Mousavi](https://eps.harvard.edu/people/mostafa-mousavi/). My research focuses on combining deep learning and seismology to understand earthquake mechanisms. I'm also interested in statistics (my background), knowledge graphs, and meta-learning. See [Publications](./publications/) for my research works and view full [CV](files/CV_Zhou_all.pdf).
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -116,9 +116,9 @@ params:
     list: 
       - title: >-
           TranSeis: A high precision multitask seismic waveform detector.
-        authors: "<strong>Zhou, Y.</strong>, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
+        authors: "**Zhou, Y.**, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
         date: "2025"
-        journal: "_Computers & Geosciences_ 196, 105867"
+        journal: "_Computers & Geosciences(Q1)_ 196, 105867"
         url: "https://doi.org/10.1016/j.cageo.2025.105867"
         type: Journal Articles
         description: "The multitask parallel model based on the Transformer architecture for seismic signal detection and phase picking."
@@ -145,28 +145,12 @@ params:
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
         authors: "<strong>Zhou, Y.</strong>, Zhang, H., S.Mousavi, M."
         date: "2026"
-        journal: "_Under Review-Journal of Geophysical Research: Solid Earth_."
+        journal: "_Under Review-Journal of Geophysical Research: Solid Earth(Q1)_."
         url: "#"
         type: Proceedings
         description: "This study provides the most comprehensive analysis of b-value spatiotemporal evolution in mainland China to date, with important implications for earthquake forecasting and seismic hazard assessment."
         image: "images/b_value1.jpg"
         image2: "images/b_value2.jpg"
-  project:
-    title: Projects
-    icon: fas fa-project-diagram
-    list:
-      - title: Project 1
-        url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
   skill:
     title: Skills
     panelId: skill-panel
