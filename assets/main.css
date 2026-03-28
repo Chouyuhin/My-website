@@ -12,7 +12,7 @@
   }
   .panel {
     max-height: 0;
-    transition: 0.3s ease-out;
+    transition: max-height 0.3s ease-out;
   }
   h2.accordion {
     @apply text-gray-600 dark:text-yellow-500;
@@ -21,7 +21,7 @@
     @apply text-gray-500 hover:text-gray-700 hover:underline dark:text-yellow-300 dark:hover:text-yellow-500;
   }
   .active {
-    @apply overflow-visible;
+    overflow: visible;
   }
   h1 {
     @apply text-4xl mb-5 mt-1;
@@ -315,19 +315,4 @@ main > div {
 /* Ensure strong tags are bold */
 strong, .publication-item strong, .publication-item p strong {
   font-weight: bold !important;
-}
-
-/* Highlight author name */
-.highlight-author {
-  background: linear-gradient(90deg, rgba(251, 191, 36, 0.15) 0%, rgba(251, 191, 36, 0.05) 100%);
-  border-left: 3px solid #fbbf24;
-  padding-left: 0.5rem;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.1);
-  font-weight: 600;
-}
-
-.dark .highlight-author {
-  background: linear-gradient(90deg, rgba(251, 191, 36, 0.25) 0%, rgba(251, 191, 36, 0.1) 100%);
-  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.2);
 }
