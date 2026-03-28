@@ -7,7 +7,7 @@
           {{ if .pub.url }}<a href="{{ .pub.url }}" class="text-gray-600 dark:text-yellow-400 hover:underline inline-flex items-center">{{ .pub.title | markdownify }} <i class="fas fa-external-link-alt ml-1 text-xs opacity-70"></i></a>
           {{ else }}{{ .pub.title | markdownify }}{{ end }}
         </h5>
-        <p class="text-gray-700 dark:text-gray-300 mb-1 text-sm">{{ .pub.authors | safeHTML }}</p>
+        <p class="text-gray-700 dark:text-gray-300 mb-1 text-sm"><span class="highlight-author">{{ .pub.authors | safeHTML }}</span></p>
         <p class="text-gray-600 dark:text-gray-400 text-sm">{{ .pub.journal | markdownify }} ({{ .pub.date }})</p>
 
         <!-- Preview section with description and image -->
