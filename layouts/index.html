@@ -14,6 +14,13 @@
     </div>
   </div>
   <div class="col-span-3 relative pl-0 md:pl-8">
+    <!-- About Me - always visible, no accordion -->
+    <div class="px-2">
+      <div class="mb-6">
+        {{ partial "accordion/aboutme" . }}
+      </div>
+    </div>
+
     {{ range .Site.Params.showInAccordion }}
     <div class="px-2">
       <h2

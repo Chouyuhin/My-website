@@ -50,8 +50,6 @@ params:
         url: "https://space.bilibili.com/11503694"
         title: Bilibili 
   showInAccordion:
-    - item: aboutme
-      expand: true
     - item: publication
       expand: true
     - item: experience
