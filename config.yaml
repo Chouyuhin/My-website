@@ -56,7 +56,6 @@ params:
       expand: true
     - item: experience
     - item: education
-    - item: project
     - item: skill
     - item: hobby
   aboutme:

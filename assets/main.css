@@ -316,3 +316,18 @@ main > div {
 strong, .publication-item strong, .publication-item p strong {
   font-weight: bold !important;
 }
+
+/* Highlight author name */
+.highlight-author {
+  background: linear-gradient(90deg, rgba(251, 191, 36, 0.15) 0%, rgba(251, 191, 36, 0.05) 100%);
+  border-left: 3px solid #fbbf24;
+  padding-left: 0.5rem;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.1);
+  font-weight: 600;
+}
+
+.dark .highlight-author {
+  background: linear-gradient(90deg, rgba(251, 191, 36, 0.25) 0%, rgba(251, 191, 36, 0.1) 100%);
+  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.2);
+}
