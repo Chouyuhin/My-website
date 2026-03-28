@@ -62,7 +62,7 @@ params:
     title: About Me
     icon: fas fa-user
     description: |
-      :wave:! I'm a research fellow at Harvard University, working with [S.Mostafa Mousavi](https://eps.harvard.edu/people/mostafa-mousavi/). My research focuses on combining deep learning and seismology to understand earthquake mechanisms. I'm also interested in statistics (my background), knowledge graphs, and meta-learning. See [Publications](./publications/) for my research works and view full [CV](files/CV_Zhou_all.pdf).
+      :wave:! I'm a research fellow at Harvard University, working with [Mostafa Mousavi](https://eps.harvard.edu/people/mostafa-mousavi/). My research focuses on combining deep learning and seismology to understand earthquake mechanisms. I'm also interested in statistics (my background), knowledge graphs, and meta-learning. See [Publications](./publications/) for my research works and view full [CV](files/CV_Zhou_all.pdf).
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -115,9 +115,9 @@ params:
     list: 
       - title: >-
           TranSeis: A high precision multitask seismic waveform detector.
-        authors: "**Zhou, Y.**, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
+        authors: "<strong>Zhou, Y.</strong>, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
         date: "2025"
-        journal: "_Computers & Geosciences(Q1)_ 196, 105867"
+        journal: "_Computers & Geosciences (Q1)_ 196, 105867"
         url: "https://doi.org/10.1016/j.cageo.2025.105867"
         type: Journal Articles
         description: "The multitask parallel model based on the Transformer architecture for seismic signal detection and phase picking."
@@ -127,7 +127,7 @@ params:
           Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration.
         authors: "Zhang, Y., Chu, B., Huang, T., Qi, S., Manga, M., Zhang, H., Zheng, B., <strong>Zhou, Y.</strong>"
         date: "2024"
-        journal: "_Water_ 16, 868 "
+        journal: "_Water (Q2)_ 16, 868 "
         url: "https://doi.org/10.3390/w16060868."
         type: Journal Articles
       - title: >-
@@ -142,9 +142,9 @@ params:
         image2: "images/Qiaojia_2.jpg"
       - title: >-
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
-        authors: "<strong>Zhou, Y.</strong>, Zhang, H., S.Mousavi, M."
+        authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, Mostafa S.Mousavi."
         date: "2026"
-        journal: "_Under Review-Journal of Geophysical Research: Solid Earth(Q1)_."
+        journal: "_Under Review-Journal of Geophysical Research: Solid Earth (Q1)_."
         url: "#"
         type: Proceedings
         description: "This study provides the most comprehensive analysis of b-value spatiotemporal evolution in mainland China to date, with important implications for earthquake forecasting and seismic hazard assessment."
