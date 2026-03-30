@@ -468,6 +468,8 @@ strong, .publication-item strong, .publication-item p strong {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
+    font-size: 0.875rem; /* Reduce overall font size */
+    margin-bottom: 1rem; /* Reduce bottom margin on mobile */
   }
 
   header.nav > div {
@@ -479,6 +481,8 @@ strong, .publication-item strong, .publication-item p strong {
 
   header.nav > div:first-child {
     flex-wrap: wrap;
+    row-gap: 0.5rem;
+    justify-content: center;
   }
 
   header.nav > div:last-child {
@@ -490,6 +494,7 @@ strong, .publication-item strong, .publication-item p strong {
   header.nav a {
     margin: 0 0.25rem;
     padding: 0.5rem;
+    font-size: 0.875rem; /* text-sm for mobile */
   }
 
   /* Center profile column on mobile */
@@ -513,8 +518,8 @@ strong, .publication-item strong, .publication-item p strong {
   }
 
   .col-span-1 .max-w-sm {
-    width: auto !important;
-    max-width: 320px !important;
+    width: 100% !important;
+    max-width: 400px !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -523,7 +528,7 @@ strong, .publication-item strong, .publication-item p strong {
     margin-left: auto !important;
     margin-right: auto !important;
     width: 100% !important;
-    max-width: 320px !important;
+    max-width: 100% !important;
   }
 
   /* Override Tailwind width classes for mobile profile column */
