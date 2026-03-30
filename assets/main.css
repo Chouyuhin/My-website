@@ -369,6 +369,11 @@ strong, .publication-item strong, .publication-item p strong {
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
   /* Improve overall centering */
+  .grid {
+    justify-items: center !important;
+    width: 100% !important;
+  }
+
   .grid > div {
     width: 100%;
     max-width: 100%;
@@ -489,21 +494,41 @@ strong, .publication-item strong, .publication-item p strong {
 
   /* Center profile column on mobile */
   .col-span-1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .col-span-1 > div {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+    width: auto !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .col-span-1 .max-w-sm {
-    width: 100%;
-    max-width: 320px;
+    width: auto !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .col-span-1 .bg-gray-300 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+
+  /* Override Tailwind width classes for mobile profile column */
+  .col-span-1 .w-full {
+    width: auto !important;
   }
 
   /* Adjust search icon size and position */
