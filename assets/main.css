@@ -365,3 +365,96 @@ strong, .publication-item strong, .publication-item p strong {
     font-size: 0.875rem;
   }
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  /* Improve overall centering */
+  .grid > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Adjust heading sizes for mobile */
+  h1 {
+    font-size: 1.875rem !important; /* text-3xl */
+    line-height: 2.25rem;
+  }
+  h2 {
+    font-size: 1.5rem !important; /* text-2xl */
+    line-height: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem !important; /* text-xl */
+    line-height: 1.75rem;
+  }
+  h4 {
+    font-size: 1.125rem !important; /* text-lg */
+    line-height: 1.75rem;
+  }
+  h5 {
+    font-size: 1rem !important; /* text-base */
+    line-height: 1.5rem;
+  }
+
+  /* Ensure content is centered */
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Profile card adjustment */
+  .profile-card {
+    margin: 0 auto;
+  }
+
+  /* Improve text readability */
+  body {
+    font-size: 0.9375rem; /* Slightly smaller base font */
+    line-height: 1.6;
+  }
+
+  /* Adjust accordion headers */
+  .accordion-header {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Publication items */
+  .publication-item {
+    padding: 0.75rem;
+  }
+
+  /* Event items */
+  .event-item {
+    padding: 0.75rem;
+  }
+
+  /* About me text */
+  .aboutme-content {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+  }
+
+  /* Improve prose readability on mobile */
+  .prose {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  /* Adjust tab buttons for better mobile experience */
+  .tab-button {
+    margin-bottom: 0.25rem;
+  }
+
+  /* Adjust profile card padding */
+  .profile-card {
+    padding: 1rem !important;
+  }
+
+  /* Ensure images are responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
