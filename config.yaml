@@ -54,7 +54,6 @@ params:
       expand: true
     - item: experience
     - item: education
-    - item: skill
     - item: hobby
   aboutme:
     title: About Me
@@ -148,17 +147,6 @@ params:
         description: "This study provides the most comprehensive analysis of b-value spatiotemporal evolution in mainland China to date, with important implications for earthquake forecasting and seismic hazard assessment."
         image: "images/b_value1.jpg"
         image2: "images/b_value2.jpg"
-  skill:
-    title: Skills
-    panelId: skill-panel
-    icon: fas fa-cogs
-    list:
-      - skill: "Python"
-        skillrating: 90
-      - skill: Adobe Illustrater
-        skillrating: 80
-      - skill: Matlab
-        skillrating: 50
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
