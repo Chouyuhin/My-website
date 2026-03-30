@@ -457,4 +457,57 @@ strong, .publication-item strong, .publication-item p strong {
     max-width: 100%;
     height: auto;
   }
+
+  /* Center header content on mobile */
+  header.nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  header.nav > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  header.nav > div:first-child {
+    flex-wrap: wrap;
+  }
+
+  header.nav > div:last-child {
+    margin-bottom: 0;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  header.nav a {
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+  }
+
+  /* Center profile column on mobile */
+  .col-span-1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .col-span-1 > div {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-span-1 .max-w-sm {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Adjust search icon size and position */
+  header.nav .fa-search {
+    font-size: 1.25rem;
+  }
 }
