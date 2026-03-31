@@ -361,8 +361,8 @@ strong, .publication-item strong, .publication-item p strong {
   .tab-button {
     flex: 1 0 auto;
     text-align: center;
-    padding: 0.75rem 0.5rem;
-    font-size: 0.875rem;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -371,7 +371,11 @@ strong, .publication-item strong, .publication-item p strong {
   /* Improve overall centering */
   .grid {
     justify-items: center !important;
+    align-items: center !important;
     width: 100% !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .grid > div {
@@ -421,7 +425,7 @@ strong, .publication-item strong, .publication-item p strong {
   /* Adjust accordion headers */
   .accordion-header {
     font-size: 1rem;
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
   }
 
   /* Publication items */
@@ -468,12 +472,13 @@ strong, .publication-item strong, .publication-item p strong {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem; /* Increased vertical padding for more height */
     font-size: 0.75rem; /* Smaller font for single row */
     margin-bottom: 1rem;
     flex-wrap: nowrap;
     overflow-x: auto; /* Allow horizontal scrolling if needed */
     white-space: nowrap;
+    min-height: 50px; /* Ensure minimum height */
   }
 
   header.nav > div {
@@ -516,6 +521,8 @@ strong, .publication-item strong, .publication-item p strong {
     margin-right: auto !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-top: 3rem !important; /* Increased top margin to center in view */
+    margin-bottom: 1rem !important; /* Reduced bottom margin */
   }
 
   .col-span-1 > div {
@@ -558,9 +565,19 @@ strong, .publication-item strong, .publication-item p strong {
     justify-content: center !important;
   }
 
+
   /* Adjust search icon size and position */
   header.nav .fa-search {
     font-size: 1rem;
+  }
+
+  /* Adjust search input width */
+  .pagefind-ui__search-input {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
   }
 
   /* Adjust theme toggle icon size */
