@@ -161,6 +161,18 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.experience-item {
+  position: relative;
+  transition: all 0.2s ease;
+}
+.experience-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.dark .experience-item:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
 .publication-item {
   transition: all 0.2s ease;
 }
@@ -586,5 +598,28 @@ strong, .publication-item strong, .publication-item p strong {
   /* Adjust theme toggle icon size */
   header.nav .theme-toggle {
     font-size: 1rem !important;
+  }
+
+  /* Experience timeline mobile adjustments */
+  .experience-item {
+    padding-left: 4rem;
+  }
+  .experience-item .absolute.left-8 {
+    left: 2rem;
+  }
+  .experience-item .absolute.left-0 {
+    left: 0.5rem;
+  }
+  .experience-item .w-16 {
+    width: 3rem;
+  }
+  .experience-item .h-16 {
+    height: 3rem;
+  }
+  .experience-item .w-12 {
+    width: 2.5rem;
+  }
+  .experience-item .h-12 {
+    height: 2.5rem;
   }
 }
