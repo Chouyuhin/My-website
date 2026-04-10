@@ -1,0 +1,100 @@
+{{ if .Site.Params.events.list }}
+<div class="timeline-container relative space-y-12">
+  <!-- Continuous timeline line -->
+  <div class="absolute left-10 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600 z-0"></div>
+  {{ range sort .Site.Params.events.list "date" "desc" }}
+  <div class="timeline-item relative pl-20 pb-12">
+
+    <!-- Date badge (on timeline) -->
+    <div class="absolute left-0 top-0 w-16 flex flex-col items-center">
+      <div class="text-center z-10 pb-2">
+        <div class="text-sm font-bold text-gray-700 dark:text-gray-300 leading-tight">
+          {{ if .date }}
+            {{ $dateParts := split .date "-" }}
+            {{ if eq (len $dateParts) 3 }}
+              {{ $year := index $dateParts 0 }}
+              {{ $month := index $dateParts 1 }}
+              {{ $monthNames := slice "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec" }}
+              {{ $monthName := index $monthNames (sub (int (replaceRE "^0+(\\d+)$" "${1}" $month)) 1) }}
+              <div class="text-xs text-gray-500 dark:text-gray-400">{{ $monthName }} {{ $year }}</div>
+            {{ else }}
+              {{ .date }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <!-- Connecting dot -->
+      <div class="absolute left-10 top-6 w-4 h-4 rounded-full bg-gradient-to-r from-gray-400 to-gray-500 dark:from-yellow-400 dark:to-yellow-500 border-2 border-white dark:border-gray-800 shadow-md z-20"></div>
+    </div>
+
+    <!-- Content card -->
+    <div class="pl-8">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden group transition-all duration-300">
+        <div class="p-6">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between mb-4">
+            <div class="flex-1">
+              <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2 group-hover:text-gray-700 dark:group-hover:text-yellow-400 transition-colors duration-200">
+                {{ if .link }}
+                  <a href="{{ .link }}" class="inline-flex items-center hover:underline">
+                    {{ .title }}
+                    <i class="fas fa-external-link-alt ml-2 text-sm opacity-70 group-hover:opacity-100 transition-opacity duration-200"></i>
+                  </a>
+                {{ else }}
+                  {{ .title }}
+                {{ end }}
+              </h4>
+              <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+                <i class="fas fa-clock mr-2 text-sm"></i>
+                <span class="text-sm">{{ .date }}</span>
+              </div>
+            </div>
+            {{ if .image }}
+            <div class="sm:ml-3 mt-2 sm:mt-0 flex-shrink-0 self-center">
+              <img src="{{ .image }}" alt="{{ .title }}" class="w-16 h-12 rounded object-cover border border-gray-200 dark:border-gray-700">
+            </div>
+            {{ end }}
+            <div class="sm:ml-3 mt-2 sm:mt-0 self-center">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600">
+                <i class="fas fa-calendar-alt mr-1"></i>
+                Event
+              </span>
+            </div>
+          </div>
+
+          {{ if .description }}
+          <div class="prose prose-gray dark:prose-invert max-w-none border-t border-gray-100 dark:border-gray-700 pt-4">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">{{ .description | markdownify }}</p>
+          </div>
+          {{ end }}
+
+          {{ if .link }}
+          <div class="mt-6 pt-4 border-t border-gray-100 dark:border-gray-700">
+            <a href="{{ .link }}" class="inline-flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 hover:from-gray-100 hover:to-gray-200 dark:hover:from-gray-600 dark:hover:to-gray-700 text-gray-700 dark:text-gray-300 font-medium transition-all duration-200 group/link">
+              <i class="fas fa-link mr-2"></i>
+              View Details
+              <i class="fas fa-arrow-right ml-2 transform group-hover/link:translate-x-1 transition-transform duration-200"></i>
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ else }}
+<div class="text-center py-12">
+  <div class="max-w-md mx-auto">
+    <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center">
+      <i class="fas fa-calendar-times text-4xl text-gray-400 dark:text-gray-600"></i>
+    </div>
+    <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-3">No Events Yet</h3>
+    <p class="text-gray-600 dark:text-gray-400 mb-6">Check back soon for upcoming events, conferences, and news.</p>
+    <a href="/" class="inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 hover:from-gray-100 hover:to-gray-200 dark:hover:from-gray-700 dark:hover:to-gray-800 text-gray-700 dark:text-gray-300 font-medium transition-all duration-200">
+      <i class="fas fa-arrow-left mr-2"></i>
+      Back to Home
+    </a>
+  </div>
+</div>
+{{ end }}
+
