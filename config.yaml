@@ -46,9 +46,9 @@ params:
       - icon: fab fa-researchgate
         url: "https://www.researchgate.net/profile/Yuxin-Zhou-57?ev=hdr_xprf"
         title: ResearchGate
-      - icon: fas fa-video
-        url: "https://space.bilibili.com/11503694"
-        title: Bilibili 
+      - icon: fa-brands fa-x-twitter
+        url: "https://x.com/choooyuhin?s=21"  # 请替换为您的 X 用户名
+        title: X 
   showInAccordion:
     - item: publication
       expand: true
@@ -88,7 +88,7 @@ params:
     icon: fas fa-graduation-cap
     list:
       - degree: Ph.D. in Geodynamics
-        college: University of Chinese Academy of Sciences(UCAS)
+        college: University of Chinese Academy of Sciences (UCAS)
         dates: Sep. 2021 - Present
         thesis_title: "The application of deep learning in seismology."
         thesis_url: "#"
@@ -162,11 +162,18 @@ params:
     title: Events & News
     icon: fas fa-calendar-alt
     list:
+      - date: "2025-09-17"
+        title: "First visit to the US and Harvard Yard tour"
+        description: "Visited Harvard Yard for the first time upon arrival in the United States."
+        link: "/blog/first-visit-harvard-yard/"
+        image: "/images/harvardfirstday.png"
       - date: "2025-03-15"
         title: "Presented at AGU Fall Meeting"
         description: "Presented our work on TranSeis at the American Geophysical Union Fall Meeting."
         link: "https://example.com"
+        image: "https://picsum.photos/80/60?random=2"
       - date: "2024-10-20"
         title: "Awarded Best Paper"
         description: "Received best paper award at Computers & Geosciences conference."
         link: "#"
+        image: "https://picsum.photos/80/60?random=3"
