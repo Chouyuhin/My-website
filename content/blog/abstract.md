@@ -15,6 +15,4 @@ If you are insteresting as she is, check it out!~
 
 By the way, click the every yellow link in the site and you might find surprise...
 
-## Acknowledgement
 
-The base theme of this site is [aafu](https://github.com/darshanbaral/aafu/) by [darsh](https://github.com/darshanbaral/). Thanks to darsh.
