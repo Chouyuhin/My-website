@@ -30,7 +30,7 @@ Harvard Yard, the historic heart of Harvard University, immediately struck me wi
 - **Memorial Church**: A beautiful Georgian-style church at the center of the Yard.
 - **Massachusetts Hall**: The oldest standing building at Harvard, dating back to 1720.
 
-![Harvard Yard on my first day](/images/harvardfirstday.png "First day at Harvard Yard")
+![Harvard Yard on my first day](/images/harvardfirstday.jpg "First day at Harvard Yard")
 
 ## Academic Significance
 
