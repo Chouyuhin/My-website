@@ -7,7 +7,7 @@
     </span>
     {{ if .image }}
     <div class="flex-shrink-0 mb-2 md:mb-0 md:mr-3 self-center">
-      <img src="{{ .image }}" alt="{{ .title }}" class="w-16 h-12 rounded object-cover border border-gray-200 dark:border-gray-700">
+      <img src="{{ .image | relURL }}" alt="{{ .title }}" class="w-16 h-12 rounded object-cover border border-gray-200 dark:border-gray-700">
     </div>
     {{ end }}
     <div class="flex-1">
