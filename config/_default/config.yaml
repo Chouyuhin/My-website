@@ -166,7 +166,7 @@ params:
         title: "First visit to the US and Harvard Yard tour"
         description: "Visited Harvard Yard for the first time upon arrival in the United States."
         link: "/blog/first-visit-harvard-yard/"
-        image: "/images/harvardfirstday.jpg"
+        image: "images/harvardfirstday.png"
       - date: "2025-03-15"
         title: "Presented at AGU Fall Meeting"
         description: "Presented our work on TranSeis at the American Geophysical Union Fall Meeting."
