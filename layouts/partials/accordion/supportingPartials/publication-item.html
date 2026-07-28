@@ -1,32 +1,28 @@
-<div class="publication-item mb-4 p-4 border-l-4 border-gray-400 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
-  <div class="flex justify-between items-start">
-    <div class="flex-1 flex items-start">
-      <i class="fas fa-file-alt text-gray-500 dark:text-yellow-400 mt-1 mr-3 flex-shrink-0"></i>
-      <div class="flex-1">
-        <h5 class="font-bold text-base mb-1">
-          {{ if .pub.url }}<a href="{{ .pub.url }}" class="text-gray-600 dark:text-yellow-400 hover:underline inline-flex items-center">{{ .pub.title | markdownify }} <i class="fas fa-external-link-alt ml-1 text-xs opacity-70"></i></a>
-          {{ else }}{{ .pub.title | markdownify }}{{ end }}
-        </h5>
-        <p class="text-gray-700 dark:text-gray-300 mb-1 text-xs"><strong>{{ .pub.authors | replaceRE "(Yuxin Zhou|Zhou, Y\\.?)" "<span style=\"border-bottom: 2px solid #000;\">$1</span>" | safeHTML }}</strong></p>
-        <p class="text-gray-600 dark:text-gray-400 text-xs">{{ .pub.journal | markdownify }} ({{ .pub.date }})</p>
+<div class="publication-item mb-6 pb-6 border-b border-stone-200 dark:border-stone-800">
+  <div class="flex justify-between items-start gap-4">
+    <div class="flex-1">
+      <div class="micro-label mb-2">{{ .pub.date }}{{ if .pub.type }}&#8195;&#12539;&#8195;{{ .pub.type }}{{ end }}</div>
+      <h5 class="font-medium text-base mb-1 leading-snug">
+        {{ if .pub.url }}<a href="{{ .pub.url }}" class="text-stone-900 dark:text-stone-100">{{ .pub.title | markdownify }}</a>
+        {{ else }}{{ .pub.title | markdownify }}{{ end }}
+      </h5>
+      <p class="text-stone-500 dark:text-stone-400 mb-1 text-xs">{{ .pub.authors | replaceRE "(Yuxin Zhou|Zhou, Y\\.?)" "<span style=\"border-bottom: 1px solid currentColor;\">$1</span>" | safeHTML }}</p>
+      <p class="text-stone-400 dark:text-stone-500 text-xs italic">{{ .pub.journal | markdownify }}</p>
 
-        <!-- Preview section with description and image -->
-        {{ if or .pub.description .pub.image }}
-        <div class="mt-4 pt-4 border-t border-gray-300 dark:border-gray-700">
-          {{ if .pub.description }}
-          <div class="mb-3 prose prose-sm dark:prose-invert max-w-none">
-            {{ .pub.description | markdownify }}
-          </div>
-          {{ end }}
-          {{ if .pub.image }}
-          <div class="mt-3">
-            <img src="{{ .pub.image | relURL }}" alt="Preview image for {{ .pub.title }}" class="rounded-lg shadow-md max-w-md max-h-48 object-contain">
-          </div>
-          {{ end }}
+      {{ if or .pub.description .pub.image }}
+      <div class="mt-4">
+        {{ if .pub.description }}
+        <div class="mb-3 text-xs leading-relaxed text-stone-500 dark:text-stone-400 max-w-2xl">
+          {{ .pub.description | markdownify }}
+        </div>
+        {{ end }}
+        {{ if .pub.image }}
+        <div class="mt-3">
+          <img src="{{ .pub.image | relURL }}" alt="Preview image for {{ .pub.title }}" class="border border-stone-200 dark:border-stone-800 max-w-md max-h-48 object-contain">
         </div>
         {{ end }}
       </div>
+      {{ end }}
     </div>
-    {{ if .pub.type }}<span class="ml-4 px-2 py-1 text-xs font-semibold bg-gray-100 dark:bg-indigo-900 text-gray-700 dark:text-indigo-200 rounded-full">{{ .pub.type }}</span>{{ end }}
   </div>
 </div>

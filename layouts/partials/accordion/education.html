@@ -1,19 +1,19 @@
 {{ range .Site.Params.education.list }}
-
-<h4 class="font-semibold text-base mb-2">{{ .degree }}</h4>
-<p {{ if .thesis_title }}class="mb-0" {{ end }}>
-  {{- .dates }} &middot; {{ .college -}}
-</p>
-{{ if .thesis_title }}
-{{ if .thesis_url }}
-<p>
-  Thesis:
-  <a href="{{ .thesis_url }}"><i>{{ .thesis_title }}</i></a>
-</p>
-{{ else }}
-<p>
-  Thesis: <i>{{ .thesis_title }}</i>
-</p>
-{{ end }}
-{{ end }}
+<div class="mb-6 pb-6 border-b border-stone-200 dark:border-stone-800 last:border-b-0">
+  <div class="micro-label mb-2">{{ .dates }}</div>
+  <h4 class="font-medium text-base mb-1">{{ .degree }}</h4>
+  <p class="text-stone-500 dark:text-stone-400 text-sm {{ if .thesis_title }}mb-1{{ else }}mb-0{{ end }}">{{ .college }}</p>
+  {{ if .thesis_title }}
+  {{ if .thesis_url }}
+  <p class="text-stone-400 dark:text-stone-500 text-sm mb-0">
+    Thesis:
+    <a href="{{ .thesis_url }}"><i>{{ .thesis_title }}</i></a>
+  </p>
+  {{ else }}
+  <p class="text-stone-400 dark:text-stone-500 text-sm mb-0">
+    Thesis: <i>{{ .thesis_title }}</i>
+  </p>
+  {{ end }}
+  {{ end }}
+</div>
 {{ end }}

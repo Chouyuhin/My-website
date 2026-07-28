@@ -3,12 +3,10 @@
             w-full md:max-w-6xl md:mx-auto px-4">
   <div class="col-span-1 md:w-[280px] mx-auto pr-0 md:pr-4">
     <div class="w-full max-w-sm mx-auto">
-      <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
-        <div class="flex flex-col items-center justify-center">
-          <div class="">{{ partial "profilePhoto" . }}</div>
-          <div class="p-2 text-center">
-            {{ partial "social" . }} {{ partial "footer" . }}
-          </div>
+      <div class="flex flex-col items-center justify-center">
+        <div class="w-full">{{ partial "profilePhoto" . }}</div>
+        <div class="p-2 pt-5 text-center w-full">
+          {{ partial "social" . }} {{ partial "footer" . }}
         </div>
       </div>
     </div>
@@ -16,22 +14,21 @@
   <div class="col-span-3 relative pl-0 md:pl-12 text-sm">
     <!-- About Me - always visible, no accordion -->
     <div class="px-2">
-      <div class="mb-6">
+      <div class="mb-10">
         {{ partial "accordion/aboutme" . }}
       </div>
     </div>
 
     <!-- Tab Navigation -->
-    <div class="px-2 mb-4">
-      <div class="flex flex-wrap border-b border-gray-300 dark:border-gray-600">
+    <div class="px-2 mb-8">
+      <div class="flex flex-wrap border-b border-stone-200 dark:border-stone-800">
         {{ range $index, $item := .Site.Params.showInAccordion }}
         {{ $current := index $.Site.Params .item }}
         <button
-          class="tab-button py-3 px-4 font-medium text-base text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white border-b-2 border-transparent hover:border-gray-400 dark:hover:border-yellow-300 transition-all duration-200 {{ if $item.expand }}active{{ end }}"
+          class="tab-button py-3 px-4 text-stone-400 dark:text-stone-500 border-b border-transparent {{ if $item.expand }}active{{ end }}"
           data-tab="{{ .item }}"
           onclick="switchTab('{{ .item }}')"
         >
-          <i class="{{ $current.icon }} mr-2"></i>
           {{ $current.title }}
         </button>
         {{ end }}

@@ -14,10 +14,18 @@ module.exports = {
   darkMode: "class", // 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        paper: "#f7f6f2",
+        ink: "#141210",
+        shu: {
+          DEFAULT: "#a63a2b",
+          light: "#c96a4f",
+        },
+      },
       backgroundColor: (theme) => ({
-        darkest: theme(`colors.stone.900`),
-        darker: theme(`colors.stone.800`),
-        dark: theme(`colors.stone.700`),
+        darkest: theme(`colors.stone.950`),
+        darker: theme(`colors.stone.900`),
+        dark: theme(`colors.stone.800`),
       }),
       typography: (theme) => ({
         DEFAULT: {
@@ -25,40 +33,40 @@ module.exports = {
             "code::before": false,
             "code::after": false,
             a: {
-              color: theme(`colors.gray.600`),
+              color: theme(`colors.stone.800`),
               textDecoration: "none",
               "&:hover": {
-                color: theme(`colors.gray.800`),
+                color: theme(`colors.black`),
                 textDecoration: "underline",
               },
             },
             pre: {
-              backgroundColor: theme(`colors.stone.200`),
-              color: theme(`colors.gray.700`),
+              backgroundColor: theme(`colors.stone.100`),
+              color: theme(`colors.stone.700`),
             },
-            code: { color: theme(`colors.gray.700`) },
+            code: { color: theme(`colors.stone.700`) },
           },
         },
         invert: {
           css: {
-            color: theme(`colors.gray.200`),
+            color: theme(`colors.stone.300`),
             a: {
-              color: theme(`colors.yellow.300`),
-              "&:hover": { color: theme(`colors.yellow.500`) },
+              color: theme(`colors.stone.100`),
+              "&:hover": { color: theme(`colors.white`) },
             },
-            h1: { color: theme(`colors.gray.200`) },
-            h2: { color: theme(`colors.gray.200`) },
-            h3: { color: theme(`colors.gray.200`) },
-            h4: { color: theme(`colors.gray.200`) },
-            h5: { color: theme(`colors.gray.200`) },
-            h6: { color: theme(`colors.gray.200`) },
-            strong: { color: theme(`colors.gray.200`) },
-            td: { color: theme(`colors.gray.200`) },
-            blockquote: { color: theme(`colors.gray.200`) },
+            h1: { color: theme(`colors.stone.100`) },
+            h2: { color: theme(`colors.stone.100`) },
+            h3: { color: theme(`colors.stone.100`) },
+            h4: { color: theme(`colors.stone.100`) },
+            h5: { color: theme(`colors.stone.100`) },
+            h6: { color: theme(`colors.stone.100`) },
+            strong: { color: theme(`colors.stone.100`) },
+            td: { color: theme(`colors.stone.300`) },
+            blockquote: { color: theme(`colors.stone.400`) },
             pre: {
-              backgroundColor: theme(`colors.stone.700`),
+              backgroundColor: theme(`colors.stone.900`),
             },
-            code: { color: theme(`colors.gray.200`) },
+            code: { color: theme(`colors.stone.300`) },
           },
         },
       }),
