@@ -133,8 +133,8 @@ params:
           Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
         authors: "<strong>Zhou, Y.</strong>, Zhang, H., S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
         date: "2026"
-        journal: "_Under Review-Communications Earth & Environment (Nature Index)_."
-        url: "#"
+        journal: "_arXiv preprint_ arXiv:2607.19606. _Under Review-Communications Earth & Environment (Nature Index)_."
+        url: "https://arxiv.org/abs/2607.19606"
         description: "Our findings indicate that shallow induced seismicity can mask the silent accumulation of deep tectonic strain. This decoupling model provides a new framework for assessing seismic risks in reservoir-fault systems globally."
         image: "images/Qiaojia_1.jpg"
         type: Proceedings
