@@ -59,7 +59,7 @@ params:
     title: About Me
     icon: fas fa-user
     description: |
-      :wave:! I'm a research fellow at Harvard University, working with [Mostafa Mousavi](https://eps.harvard.edu/people/mostafa-mousavi/). My research focuses on combining deep learning and seismology to understand earthquake mechanisms. I'm also interested in statistics (my background), knowledge graphs, and meta-learning. See [Publications](./publications/) for my research works and view full [CV](files/CV_Zhou_all.pdf).
+      :wave:! I'm a research fellow at Harvard University, working with [S.Mostafa Mousavi](https://eps.harvard.edu/people/mostafa-mousavi/). My research focuses on combining deep learning and seismology to understand earthquake mechanisms. I'm also interested in statistics (my background), knowledge graphs, and meta-learning. See [Publications](./publications/) for my research works and view full [CV](files/CV_Zhou_all.pdf).
   experience:
     title: Experiences
     icon: fas fa-briefcase
