@@ -20,12 +20,12 @@
         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           {{ if .pub.image }}
           <div>
-            <img src="{{ .pub.image | relURL }}" alt="Preview image for {{ .pub.title }}" class="border border-stone-200 dark:border-stone-800 w-full h-auto max-h-48 object-contain">
+            <img src="{{ .pub.image | relURL }}" alt="Preview image for {{ .pub.title }}" class="pub-figure w-full h-auto max-h-48 object-contain">
           </div>
           {{ end }}
           {{ if .pub.image2 }}
           <div>
-            <img src="{{ .pub.image2 | relURL }}" alt="Preview image 2 for {{ .pub.title }}" class="border border-stone-200 dark:border-stone-800 w-full h-auto max-h-48 object-contain">
+            <img src="{{ .pub.image2 | relURL }}" alt="Preview image 2 for {{ .pub.title }}" class="pub-figure w-full h-auto max-h-48 object-contain">
           </div>
           {{ end }}
         </div>

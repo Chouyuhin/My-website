@@ -208,6 +208,18 @@ header.nav a {
   transition: border-color 0.3s ease;
 }
 
+/* Publication figures: no frame — in light mode the figure's white
+   background is multiplied away so it prints directly on the paper */
+.pub-figure {
+  border: none;
+  mix-blend-mode: multiply;
+}
+.dark .pub-figure {
+  mix-blend-mode: normal;
+  /* soften the white figure background against the sumi dark */
+  filter: brightness(0.92);
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
