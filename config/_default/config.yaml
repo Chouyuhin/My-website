@@ -147,8 +147,8 @@ params:
         url: "https://arxiv.org/abs/2607.24984"
         type: Proceedings
         description: "A first-time application of GraphRAG to raw, tabular earthquake catalog records across three independent datasets. The pipeline builds queryable knowledge graphs without manual data structuring."
-        image: "images/kg_graph_qiaojia.png"
-        image2: "images/kg_pipeline_schematic.png"
+        image: "images/kg_pipeline_schematic.png"
+        image2: "images/kg_graph_qiaojia.png"
       - title: >-
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
         authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, Mostafa S.Mousavi."
