@@ -20,12 +20,20 @@
         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           {{ if .pub.image }}
           <div>
+            {{ if strings.HasSuffix .pub.image ".pdf" }}
+            <embed src="{{ .pub.image | relURL }}" type="application/pdf" class="w-full h-48 border border-stone-200 dark:border-stone-700">
+            {{ else }}
             <img src="{{ .pub.image | relURL }}" alt="Preview image for {{ .pub.title }}" class="pub-figure w-full h-auto max-h-48 object-contain">
+            {{ end }}
           </div>
           {{ end }}
           {{ if .pub.image2 }}
           <div>
+            {{ if strings.HasSuffix .pub.image2 ".pdf" }}
+            <embed src="{{ .pub.image2 | relURL }}" type="application/pdf" class="w-full h-48 border border-stone-200 dark:border-stone-700">
+            {{ else }}
             <img src="{{ .pub.image2 | relURL }}" alt="Preview image 2 for {{ .pub.title }}" class="pub-figure w-full h-auto max-h-48 object-contain">
+            {{ end }}
           </div>
           {{ end }}
         </div>
