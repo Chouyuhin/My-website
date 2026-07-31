@@ -131,7 +131,7 @@ params:
         type: Journal Articles
       - title: >-
           Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
-        authors: "<strong>Zhou, Y.</strong>, Zhang, H., S.Mousavi, M., Yin G., He P., Guo Y., Yi S., Shi, Y"
+        authors: "<strong>Zhou, Y.</strong>, Zhang, H., Mousavi, S.M., Yin G., He P., Guo Y., Yi S., Shi, Y"
         date: "2026"
         journal: "_arXiv preprint_ arXiv:2607.19606. _Under Review-Communications Earth & Environment (Nature Index)_."
         url: "https://arxiv.org/abs/2607.19606"
@@ -151,7 +151,7 @@ params:
         image2: "images/kg_graph_qiaojia.png"
       - title: >-
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
-        authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, Mostafa S.Mousavi."
+        authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, S.Mostafa Mousavi."
         date: "2026"
         journal: "_Under Review-Journal of Geophysical Research: Solid Earth (Q1)_."
         url: "#"

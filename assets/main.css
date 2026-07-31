@@ -404,7 +404,7 @@ strong {
   }
 
   .publication-item {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0.75rem;
   }
 
   .event-item {
@@ -415,6 +415,7 @@ strong {
     font-size: 0.9375rem;
     line-height: 1.6;
     padding: 0 0.5rem;
+    text-align: justify;
   }
 
   .prose {
