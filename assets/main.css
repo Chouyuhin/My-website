@@ -368,6 +368,20 @@ strong {
     flex: 1;
   }
 
+  /* Children of the content column must not exceed the viewport:
+     without an explicit width, figures (max-w-md = 448px) set the
+     column's min-content width and push text past the screen edge */
+  .grid > div > div {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .pub-figure,
+  .publication-item embed {
+    max-width: 100% !important;
+  }
+
   h1 {
     font-size: 1.875rem !important;
     line-height: 2.25rem;
