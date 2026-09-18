@@ -153,8 +153,8 @@ params:
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
         authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, S.Mostafa Mousavi."
         date: "2026"
-        journal: "_Under Review-Journal of Geophysical Research: Solid Earth (Q1)_."
-        url: "#"
+        journal: "_arXiv preprint_ arXiv:2609.20239. https://doi.org/10.48550/arXiv.2609.20239. _Under Review-Journal of Geophysical Research: Solid Earth (Q1)_."
+        url: "https://doi.org/10.48550/arXiv.2609.20239"
         type: Proceedings
         description: "This study provides the most comprehensive analysis of b-value spatiotemporal evolution in mainland China to date, with important implications for earthquake forecasting and seismic hazard assessment."
         image: "images/b_value1.jpg"
