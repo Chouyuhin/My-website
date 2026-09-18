@@ -113,7 +113,7 @@ params:
     # Note: Ensure your name "Zhou, Y." is bolded with ** ** in authors field
     list: 
       - title: >-
-          TranSeis: A high precision multitask seismic waveform detector.
+          TranSeis: A high precision multitask seismic waveform detector
         authors: "<strong>Zhou, Y.</strong>, Zhang, H., Chen, S., Yuan, Z., Tan, C., Huang, F., Guo, Y., Shi, Y."
         date: "2025"
         journal: "_Computers & Geosciences (Q1)_ 196, 105867"
@@ -123,7 +123,7 @@ params:
         image: "images/transeis_mainfig.jpg"
         image2: "images/transeis_fig2.jpg"
       - title: >-
-          Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration.
+          Using the Tidal Response of Groundwater to Assess and Monitor Caprock Confinement in CO2 Geological Sequestration
         authors: "Zhang, Y., Chu, B., Huang, T., Qi, S., Manga, M., Zhang, H., Zheng, B., <strong>Zhou, Y.</strong>"
         date: "2024"
         journal: "_Water (Q2)_ 16, 868 "
@@ -131,7 +131,7 @@ params:
         type: Journal Articles
       - title: >-
           Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
-        authors: "<strong>Zhou, Y.</strong>, Zhang, H., Mousavi, S.M., Yin G., He P., Guo Y., Yi S., Shi, Y"
+        authors: "<strong>Zhou, Y.</strong>, Zhang, H., Mousavi, S.M., Yin G., He P., Guo Y., Yi S., Shi, Y."
         date: "2026"
         journal: "_arXiv preprint_ arXiv:2607.19606. _Under Review-Communications Earth & Environment (Nature Index)_."
         url: "https://arxiv.org/abs/2607.19606"
@@ -151,7 +151,7 @@ params:
         image2: "images/kg_graph_qiaojia.png"
       - title: >-
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
-        authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, S.Mostafa Mousavi."
+        authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, S.Mostafa Mousavi"
         date: "2026"
         journal: "_arXiv preprint_ arXiv:2609.20239. https://doi.org/10.48550/arXiv.2609.20239. _Under Review-Journal of Geophysical Research: Solid Earth (Q1)_."
         url: "https://doi.org/10.48550/arXiv.2609.20239"
