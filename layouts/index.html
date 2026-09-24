@@ -73,10 +73,22 @@
         if (selectedButton) {
           selectedButton.classList.add('active');
         }
+
+        // Remember the open tab in the URL so browser back returns to it
+        if (selectedContent && location.hash !== '#' + tabName) {
+          history.replaceState(history.state, '', '#' + tabName);
+        }
       }
 
       // Initialize tabs on page load
       document.addEventListener('DOMContentLoaded', function() {
+        // Restore the tab named in the URL (e.g. #events)
+        const hashTab = decodeURIComponent(location.hash.slice(1));
+        if (hashTab && document.getElementById(`tab-${hashTab}`)) {
+          switchTab(hashTab);
+          return;
+        }
+
         // Check if any tab is already active (from expand: true)
         const hasActiveTab = document.querySelector('.tab-content.active');
 
