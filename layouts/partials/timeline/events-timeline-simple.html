@@ -29,7 +29,7 @@
           <div class="flex-1">
             <h4 class="text-base font-medium text-stone-900 dark:text-stone-100">
               {{ if .link }}
-                <a href="{{ .link }}" class="text-stone-900 dark:text-stone-100">{{ .title }}</a>
+                <a href="{{ .link | relURL }}" class="text-stone-900 dark:text-stone-100">{{ .title }}</a>
               {{ else }}
                 {{ .title }}
               {{ end }}
