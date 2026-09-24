@@ -1,22 +1,21 @@
-{{ range sort .Site.Params.events.list "date" "desc" }}
+{{ range (site.GetPage "/events").Pages.ByDate.Reverse }}
 <div class="event-item mb-6 pb-6 border-b border-stone-200 dark:border-stone-800">
   <div class="flex flex-col md:flex-row md:items-start gap-3">
-    <span class="micro-label md:w-24 md:flex-shrink-0 md:pt-1">{{ .date }}</span>
-    {{ if and .image (not .image2) }}
+    <span class="micro-label md:w-24 md:flex-shrink-0 md:pt-1">{{ .Date.Format "2006-01-02" }}</span>
+    {{ if and .Params.image (not .Params.image2) }}
     <div class="flex-shrink-0 self-start">
-      <img src="{{ .image | relURL }}" alt="{{ .title }}" class="w-16 h-12 object-cover border border-stone-200 dark:border-stone-800">
+      <a href="{{ .RelPermalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="w-16 h-12 object-cover border border-stone-200 dark:border-stone-800"></a>
     </div>
     {{ end }}
     <div class="flex-1">
       <h4 class="text-base font-medium mb-1">
-        {{ if .link }}<a href="{{ .link | relURL }}" class="text-stone-900 dark:text-stone-100">{{ .title }}</a>
-        {{ else }}{{ .title }}{{ end }}
+        <a href="{{ .RelPermalink }}" class="text-stone-900 dark:text-stone-100">{{ .Title }}</a>
       </h4>
-      {{ if .description }}
-      <p class="text-stone-500 dark:text-stone-400 mb-0 mt-1 text-sm">{{ .description | markdownify }}</p>
+      {{ with .Description }}
+      <p class="text-stone-500 dark:text-stone-400 mb-0 mt-1 text-sm">{{ . | markdownify }}</p>
       {{ end }}
-      {{ if and .image .image2 }}
-      {{ partial "accordion/supportingPartials/event-images-double" . }}
+      {{ if and .Params.image .Params.image2 }}
+      {{ partial "accordion/supportingPartials/event-images-double" (dict "image" .Params.image "image2" .Params.image2 "title" .Title "link" .RelPermalink) }}
       {{ end }}
     </div>
   </div>

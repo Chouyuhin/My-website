@@ -1,9 +1,10 @@
-<!-- Editorial collage: large lead photo, smaller tilted print overlapping its lower-right corner -->
+<!-- Editorial collage: large lead photo, smaller tilted print overlapping its lower-right corner.
+     Expects a dict with image, image2, title and optional link (defaults to opening each photo). -->
 <div class="relative mt-5 mb-4 sm:mb-20">
-  <a href="{{ .image | relURL }}" target="_blank" rel="noopener" class="group block w-full sm:w-[84%] overflow-hidden">
+  <a href="{{ .link | default (.image | relURL) }}" class="group block w-full sm:w-[84%] overflow-hidden">
     <img src="{{ .image | relURL }}" alt="{{ .title }}" loading="lazy" class="w-full h-auto transition-transform duration-700 group-hover:scale-[1.015]">
   </a>
-  <a href="{{ .image2 | relURL }}" target="_blank" rel="noopener"
+  <a href="{{ .link | default (.image2 | relURL) }}"
      class="relative z-10 block w-[58%] sm:w-[42%] ml-auto -mt-12 sm:mt-0 sm:absolute sm:right-0 sm:-bottom-16
             rotate-[2.5deg] hover:rotate-0 transition-transform duration-500
             shadow-xl">

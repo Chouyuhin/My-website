@@ -1,23 +1,13 @@
-{{ if .Site.Params.events.list }}
+{{ $events := (site.GetPage "/events").Pages.ByDate.Reverse }}
+{{ if $events }}
 <div class="timeline-container relative space-y-8">
   <!-- Continuous timeline line -->
   <div class="absolute left-10 top-0 bottom-0 w-px bg-stone-200 dark:bg-stone-800 z-0"></div>
-  {{ range sort .Site.Params.events.list "date" "desc" }}
+  {{ range $events }}
   <div class="timeline-item relative pl-20 pb-4">
     <!-- Date label (left of timeline) -->
     <div class="absolute left-0 top-6 w-10 text-right pr-2 z-10">
-      {{ if .date }}
-        {{ $dateParts := split .date "-" }}
-        {{ if eq (len $dateParts) 3 }}
-          {{ $year := index $dateParts 0 }}
-          {{ $month := index $dateParts 1 }}
-          {{ $monthNames := slice "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec" }}
-          {{ $monthName := index $monthNames (sub (int (replaceRE "^0+(\\d+)$" "${1}" $month)) 1) }}
-          <div class="micro-label leading-tight">{{ $monthName }}<br>{{ $year }}</div>
-        {{ else }}
-          <div class="micro-label leading-tight">{{ .date }}</div>
-        {{ end }}
-      {{ end }}
+      <div class="micro-label leading-tight">{{ .Date.Format "Jan" }}<br>{{ .Date.Format "2006" }}</div>
     </div>
     <!-- Node (centered on timeline) -->
     <div class="absolute left-10 top-6 transform -translate-x-1/2 w-2 h-2 rounded-full bg-shu dark:bg-shu-light z-20"></div>
@@ -28,26 +18,22 @@
         <div class="flex flex-col sm:flex-row sm:items-start justify-between mb-1 gap-3">
           <div class="flex-1">
             <h4 class="text-base font-medium text-stone-900 dark:text-stone-100">
-              {{ if .link }}
-                <a href="{{ .link | relURL }}" class="text-stone-900 dark:text-stone-100">{{ .title }}</a>
-              {{ else }}
-                {{ .title }}
-              {{ end }}
+              <a href="{{ .RelPermalink }}" class="text-stone-900 dark:text-stone-100">{{ .Title }}</a>
             </h4>
           </div>
-          {{ if and .image (not .image2) }}
+          {{ if and .Params.image (not .Params.image2) }}
           <div class="sm:ml-3 flex-shrink-0 self-start">
-            <img src="{{ .image | relURL }}" alt="{{ .title }}" class="w-16 h-12 object-cover border border-stone-200 dark:border-stone-800">
+            <a href="{{ .RelPermalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="w-16 h-12 object-cover border border-stone-200 dark:border-stone-800"></a>
           </div>
           {{ end }}
         </div>
-        {{ if .description }}
+        {{ with .Description }}
         <div class="mt-1">
-          <p class="text-stone-500 dark:text-stone-400 leading-relaxed text-sm">{{ .description | markdownify }}</p>
+          <p class="text-stone-500 dark:text-stone-400 leading-relaxed text-sm">{{ . | markdownify }}</p>
         </div>
         {{ end }}
-        {{ if and .image .image2 }}
-        {{ partial "accordion/supportingPartials/event-images-double" . }}
+        {{ if and .Params.image .Params.image2 }}
+        {{ partial "accordion/supportingPartials/event-images-double" (dict "image" .Params.image "image2" .Params.image2 "title" .Title "link" .RelPermalink) }}
         {{ end }}
       </div>
     </div>
@@ -57,7 +43,6 @@
 {{ else }}
 <div class="text-center py-16">
   <p class="micro-label mb-4">Nothing here yet</p>
-  <p class="text-stone-500 dark:text-stone-400 text-sm mb-8">Check back soon for upcoming events, conferences, and news.</p>
-  {{ partial "back-link" . }}
+  <p class="text-stone-500 dark:text-stone-400 text-sm">Check back soon for upcoming events, conferences, and news.</p>
 </div>
 {{ end }}

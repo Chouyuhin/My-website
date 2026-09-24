@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto px-4 py-16">
+  <header class="mb-10">
+    <div class="micro-label mb-4">{{ .Date.Format "January 2, 2006" }}</div>
+    <h1 class="text-3xl font-medium mb-4 text-stone-900 dark:text-stone-100">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="text-stone-500 dark:text-stone-400 max-w-2xl text-sm leading-relaxed">{{ . | markdownify }}</p>
+    {{ end }}
+  </header>
+
+  {{ if and .Params.image .Params.image2 }}
+  {{ partial "accordion/supportingPartials/event-images-double" (dict "image" .Params.image "image2" .Params.image2 "title" .Title) }}
+  {{ else if .Params.image }}
+  <a href="{{ .Params.image | relURL }}" class="block overflow-hidden">
+    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="w-full h-auto">
+  </a>
+  {{ end }}
+
+  {{ with .Content }}
+  <div class="prose prose-stone dark:prose-invert max-w-2xl mt-10">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.link }}
+  <p class="mt-10 text-sm">
+    <a href="{{ . }}" target="_blank" rel="noopener" class="micro-label" style="color: inherit;">Related link &rarr;</a>
+  </p>
+  {{ end }}
+
+  <div class="mt-16">{{ partial "prevnext" . }}</div>
+</article>
+{{ end }}

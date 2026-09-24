@@ -1,3 +1,0 @@
-<!-- Returns to the previous page when the visitor came from within this site; otherwise falls back to the home page -->
-<a href="{{ site.Home.RelPermalink }}" class="micro-label" style="color: inherit;"
-   onclick="try { if (document.referrer && new URL(document.referrer).origin === location.origin && history.length > 1) { event.preventDefault(); history.back(); } } catch (e) {}">&larr; Back</a>
