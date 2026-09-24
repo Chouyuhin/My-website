@@ -35,7 +35,7 @@
               {{ end }}
             </h4>
           </div>
-          {{ if .image }}
+          {{ if and .image (not .image2) }}
           <div class="sm:ml-3 flex-shrink-0 self-start">
             <img src="{{ .image | relURL }}" alt="{{ .title }}" class="w-16 h-12 object-cover border border-stone-200 dark:border-stone-800">
           </div>
@@ -45,6 +45,9 @@
         <div class="mt-1">
           <p class="text-stone-500 dark:text-stone-400 leading-relaxed text-sm">{{ .description | markdownify }}</p>
         </div>
+        {{ end }}
+        {{ if and .image .image2 }}
+        {{ partial "accordion/supportingPartials/event-images-double" . }}
         {{ end }}
       </div>
     </div>

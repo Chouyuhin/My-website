@@ -172,6 +172,11 @@ params:
     title: Events & News
     icon: fas fa-calendar-alt
     list:
+      - date: "2026-09-21"
+        title: "Shooting the band's group photo"
+        description: "Took photos of every one of our band members, plus a group portrait and some shots from rehearsal."
+        image: "images/band1.jpeg"
+        image2: "images/band2.jpeg"
       - date: "2025-09-17"
         title: "First visit to the US and Harvard Yard tour"
         description: "Visited Harvard Yard for the first time upon arrival in the United States."

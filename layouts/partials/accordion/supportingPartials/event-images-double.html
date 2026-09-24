@@ -1,0 +1,7 @@
+<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+  {{ range slice .image .image2 }}
+  <a href="{{ . | relURL }}" target="_blank" rel="noopener" class="block overflow-hidden border border-stone-200 dark:border-stone-800">
+    <img src="{{ . | relURL }}" alt="{{ $.title }}" loading="lazy" class="w-full aspect-[3/2] object-cover transition-transform duration-300 hover:scale-[1.02]">
+  </a>
+  {{ end }}
+</div>

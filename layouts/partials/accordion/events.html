@@ -2,7 +2,7 @@
 <div class="event-item mb-6 pb-6 border-b border-stone-200 dark:border-stone-800">
   <div class="flex flex-col md:flex-row md:items-start gap-3">
     <span class="micro-label md:w-24 md:flex-shrink-0 md:pt-1">{{ .date }}</span>
-    {{ if .image }}
+    {{ if and .image (not .image2) }}
     <div class="flex-shrink-0 self-start">
       <img src="{{ .image | relURL }}" alt="{{ .title }}" class="w-16 h-12 object-cover border border-stone-200 dark:border-stone-800">
     </div>
@@ -14,6 +14,9 @@
       </h4>
       {{ if .description }}
       <p class="text-stone-500 dark:text-stone-400 mb-0 mt-1 text-sm">{{ .description | markdownify }}</p>
+      {{ end }}
+      {{ if and .image .image2 }}
+      {{ partial "accordion/supportingPartials/event-images-double" . }}
       {{ end }}
     </div>
   </div>
