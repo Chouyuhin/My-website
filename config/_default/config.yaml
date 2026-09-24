@@ -54,7 +54,7 @@ params:
       expand: true
     - item: experience
     - item: education
-    - item: hobby
+    - item: events
   aboutme:
     title: About Me
     icon: fas fa-user

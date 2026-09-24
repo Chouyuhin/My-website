@@ -1,7 +1,12 @@
-<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-  {{ range slice .image .image2 }}
-  <a href="{{ . | relURL }}" target="_blank" rel="noopener" class="block overflow-hidden border border-stone-200 dark:border-stone-800">
-    <img src="{{ . | relURL }}" alt="{{ $.title }}" loading="lazy" class="w-full aspect-[3/2] object-cover transition-transform duration-300 hover:scale-[1.02]">
+<!-- Editorial collage: large lead photo, smaller tilted print overlapping its lower-right corner -->
+<div class="relative mt-5 mb-4 sm:mb-20">
+  <a href="{{ .image | relURL }}" target="_blank" rel="noopener" class="group block w-full sm:w-[84%] overflow-hidden">
+    <img src="{{ .image | relURL }}" alt="{{ .title }}" loading="lazy" class="w-full h-auto transition-transform duration-700 group-hover:scale-[1.015]">
   </a>
-  {{ end }}
+  <a href="{{ .image2 | relURL }}" target="_blank" rel="noopener"
+     class="relative z-10 block w-[58%] sm:w-[42%] ml-auto -mt-12 sm:mt-0 sm:absolute sm:right-0 sm:-bottom-16
+            rotate-[2.5deg] hover:rotate-0 transition-transform duration-500
+            border-[6px] border-[#f7f6f2] dark:border-[#141210] shadow-xl">
+    <img src="{{ .image2 | relURL }}" alt="{{ .title }}" loading="lazy" class="w-full h-auto">
+  </a>
 </div>
