@@ -90,8 +90,8 @@ params:
       - degree: Ph.D. in Geodynamics
         college: University of Chinese Academy of Sciences (UCAS)
         dates: Sep. 2021 - Present
-        thesis_title: "The application of deep learning in seismology."
-        thesis_url: "#"
+        thesis_title: "High-Resolution Earthquake Catalog and Strong-Earthquake Hazard Analysis of Seismic Gaps"
+        thesis_url: "https://github.com/Chouyuhin/Thesis-Yuxin-Zhou-UCAS"
       - degree: B.S. in Applied Statictics
         college: Changsha University of Science and Technology
         dates: Sep. 2017 - Jun. 2021
