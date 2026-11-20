@@ -8,7 +8,7 @@ params:
   author: Shane Zhou
   description: Website title
   copyright: >-
-    yzhou2@fas.harvard.edu & zhouyuxin21@mails.ucas.ac.cn
+    yzhou2@fas.harvard.edu
   theme:
     mainTheme: ""
     showAttribute: true
@@ -25,7 +25,7 @@ params:
 
   profile:
     name: "Yuxin Zhou"
-    tagline: Research Fellow @ Harvard University | Ph.D Candidate @ UCAS
+    tagline: Research Fellow @ Harvard University | Ph.D @ UCAS
     location: "Cambirdge, MA"
     photo: myprofile.jpg
   social:
@@ -47,7 +47,7 @@ params:
         url: "https://www.researchgate.net/profile/Yuxin-Zhou-57?ev=hdr_xprf"
         title: ResearchGate
       - icon: fa-brands fa-x-twitter
-        url: "https://x.com/choooyuhin?s=21"  # 请替换为您的 X 用户名
+        url: "https://x.com/choooyuhin?s=21"  
         title: X 
   showInAccordion:
     - item: publication
@@ -133,7 +133,7 @@ params:
           Juxtaposition of Shallow Reservoir-Triggered Seismicity and Deep Tectonic Locking in the Qiaojia-Dongchuan Seismic Gap
         authors: "<strong>Zhou, Y.</strong>, Zhang, H., Mousavi, S.M., Yin G., He P., Guo Y., Yi S., Shi, Y."
         date: "2026"
-        journal: "_arXiv preprint_ arXiv:2607.19606. _Under Review-Communications Earth & Environment (Nature Index)_."
+        journal: "_arXiv preprint_ arXiv:2607.19606."
         url: "https://arxiv.org/abs/2607.19606"
         description: "Our findings indicate that shallow induced seismicity can mask the silent accumulation of deep tectonic strain. This decoupling model provides a new framework for assessing seismic risks in reservoir-fault systems globally."
         image: "images/Qiaojia_1.jpg"
@@ -153,7 +153,7 @@ params:
           Spatiotemporal Variation of b-values Across Mainland China: Justifying the Reliability of the b-positive Criterion for Earthquake
         authors: "<strong>Yuxin Zhou</strong>, Huai Zhang, S.Mostafa Mousavi"
         date: "2026"
-        journal: "_arXiv preprint_ arXiv:2609.20239. https://doi.org/10.48550/arXiv.2609.20239. _Under Review-Journal of Geophysical Research: Solid Earth (Q1)_."
+        journal: "_arXiv preprint_ arXiv:2609.20239. _Under Revision-Journal of Geophysical Research: Solid Earth (Q1)_."
         url: "https://doi.org/10.48550/arXiv.2609.20239"
         type: Proceedings
         description: "This study provides the most comprehensive analysis of b-value spatiotemporal evolution in mainland China to date, with important implications for earthquake forecasting and seismic hazard assessment."
